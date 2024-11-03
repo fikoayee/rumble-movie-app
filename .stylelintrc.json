@@ -14,6 +14,14 @@
           "content"
         ]
       }
-    ]
+    ],
+    "property-no-vendor-prefix": null,
+    "declaration-block-no-duplicate-properties": [
+      true,
+      {
+        "ignore": ["consecutive-duplicates-with-different-values"]
+      }
+    ],
+    "semi": "never"
   }
 }
