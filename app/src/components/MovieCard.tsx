@@ -2,7 +2,6 @@ import { Box, Grid2, Rating } from "@mui/material";
 import React from "react";
 import Recommendation from "../interfaces/recommendation";
 import { motion, useMotionValue, useTransform } from "framer-motion";
-import MovieCardSkeleton from "./MovieCardSkeleton";
 interface Props {
   children?: React.ReactNode;
   movie?: Recommendation;

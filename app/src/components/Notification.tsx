@@ -14,7 +14,7 @@ const Notification = forwardRef(({ currentBreakpoint }: Props, ref) => {
   const mobileBreakpoints = ["xs", "sm"];
 
   const handleClose = (
-    event: React.SyntheticEvent | Event,
+    _event: React.SyntheticEvent | Event,
     reason?: SnackbarCloseReason
   ) => {
     if (reason === "clickaway") {
