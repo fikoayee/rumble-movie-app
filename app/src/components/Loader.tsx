@@ -12,8 +12,8 @@ const Loader = ({ isLoading }: Props) => {
         <svg width={0} height={0}>
           <defs>
             <linearGradient id="my_gradient" x1="0%" y1="0%" x2="0%" y2="100%">
-              <stop offset="0%" stop-color="#FF7854" />
-              <stop offset="100%" stop-color="#FD267D" />
+              <stop offset="0%" stopColor="#FF7854" />
+              <stop offset="100%" stopColor="#FD267D" />
             </linearGradient>
           </defs>
         </svg>

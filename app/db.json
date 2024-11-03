@@ -3,17 +3,65 @@
     {
       "id": "1and3011",
       "imageURL": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTUzNTE2NTkzMV5BMl5BanBnXkFtZTgwMDAzOTUyMDI@._V1_SY1000_CR0,0,674,1000_AL_.jpg",
-      "title": "accepted",
+      "title": "Star Wars: A New Hope",
       "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin malesuada felis non urna bibendum, nec consequat justo scelerisque.",
       "rating": 5.3,
-      "isAccepted": true
+      "isAccepted": null
     },
     {
       "id": "1and3012",
       "imageURL": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTUzNTE2NTkzMV5BMl5BanBnXkFtZTgwMDAzOTUyMDI@._V1_SY1000_CR0,0,674,1000_AL_.jpg",
-      "title": "accepted",
-      "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin malesuada felis non urna bibendum, nec consequat justo scelerisque.",
-      "rating": 5.3,
+      "title": "The Hobbit: An Unexpected Journey",
+      "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed varius nulla vitae nunc blandit, non condimentum lectus dignissim.",
+      "rating": 7.7,
+      "isAccepted": null
+    },
+    {
+      "id": "1and3013",
+      "imageURL": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTUzNTE2NTkzMV5BMl5BanBnXkFtZTgwMDAzOTUyMDI@._V1_SY1000_CR0,0,674,1000_AL_.jpg",
+      "title": "Inception",
+      "summary": "Lorem ipsum dolor sit amet. Quisque eget dui a libero luctus tincidunt. Aliquam erat volutpat. Sed at semper massa.",
+      "rating": 4.5,
+      "isAccepted": null
+    },
+    {
+      "id": "1and3014",
+      "imageURL": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTUzNTE2NTkzMV5BMl5BanBnXkFtZTgwMDAzOTUyMDI@._V1_SY1000_CR0,0,674,1000_AL_.jpg",
+      "title": "The Matrix",
+      "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vulputate quam eu facilisis vehicula. Fusce eget massa purus.",
+      "rating": 8.9,
+      "isAccepted": null
+    },
+    {
+      "id": "1and3015",
+      "imageURL": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTUzNTE2NTkzMV5BMl5BanBnXkFtZTgwMDAzOTUyMDI@._V1_SY1000_CR0,0,674,1000_AL_.jpg",
+      "title": "The Lord of the Rings: The Fellowship of the Ring",
+      "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tristique arcu ut diam vehicula, et hendrerit sapien ornare.",
+      "rating": 7.3,
+      "isAccepted": null
+    },
+    {
+      "id": "1and3016",
+      "imageURL": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTUzNTE2NTkzMV5BMl5BanBnXkFtZTgwMDAzOTUyMDI@._V1_SY1000_CR0,0,674,1000_AL_.jpg",
+      "title": "Jurassic Park",
+      "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent scelerisque justo id mi ullamcorper gravida. Cras vehicula efficitur purus.",
+      "rating": 2.1,
+      "isAccepted": null
+    },
+    {
+      "id": "1and3017",
+      "imageURL": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTUzNTE2NTkzMV5BMl5BanBnXkFtZTgwMDAzOTUyMDI@._V1_SY1000_CR0,0,674,1000_AL_.jpg",
+      "title": "The Dark Knight",
+      "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt felis vel diam dictum, in facilisis dolor luctus.",
+      "rating": 4.8,
+      "isAccepted": null
+    },
+    {
+      "id": "1and3018",
+      "imageURL": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTUzNTE2NTkzMV5BMl5BanBnXkFtZTgwMDAzOTUyMDI@._V1_SY1000_CR0,0,674,1000_AL_.jpg",
+      "title": "Avatar",
+      "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Integer auctor lacinia purus, a tincidunt libero volutpat non.",
+      "rating": 5.6,
       "isAccepted": null
     }
   ]

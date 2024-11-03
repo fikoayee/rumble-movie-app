@@ -35,4 +35,14 @@ export class RecommendationServiceImpl implements RecommendationService {
       throw new Error("Error on rejecting recommendation.");
     }
   }
+  async resetRecommendationsStatus(): Promise<unknown> {
+    try {
+      const response: any = await api.patch(
+        `${this.SERVICE_PATH_RECOMMENDATION}/reset-status`
+      );
+      return response.data;
+    } catch (error) {
+      throw new Error("Error on reseting recommendations status");
+    }
+  }
 }

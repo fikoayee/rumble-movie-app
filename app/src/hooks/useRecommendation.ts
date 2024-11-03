@@ -37,5 +37,20 @@ export const useRecommendation = () => {
       return null;
     }
   };
-  return { getRecommendations, acceptRecommendation, rejectRecommendation };
+  const resetRecommendationsStatus = async () => {
+    try {
+      const response: any =
+        await recommendationService.resetRecommendationsStatus();
+      await simulateDelay();
+      return response;
+    } catch (error) {
+      return null;
+    }
+  };
+  return {
+    getRecommendations,
+    acceptRecommendation,
+    rejectRecommendation,
+    resetRecommendationsStatus,
+  };
 };
