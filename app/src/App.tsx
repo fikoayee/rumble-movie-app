@@ -49,6 +49,9 @@ const App = () => {
   };
 
   const handleAcceptRecommendation = async (recommendation: Recommendation) => {
+    if (isAccepting) {
+      return;
+    }
     try {
       setIsAccepting(true);
       const response = await acceptRecommendation(recommendation.id);
@@ -64,6 +67,9 @@ const App = () => {
     }
   };
   const handleRejectRecommendation = async (recommendation: Recommendation) => {
+    if (isRejecting) {
+      return;
+    }
     try {
       setIsRejecting(true);
       const response = await rejectRecommendation(recommendation.id);
@@ -101,6 +107,15 @@ const App = () => {
         "error"
       );
     }
+  };
+
+  const handleSwipe = (isAccepted: boolean) => {
+    if (!currentRecommendation) {
+      return;
+    }
+    isAccepted
+      ? handleAcceptRecommendation(currentRecommendation)
+      : handleRejectRecommendation(currentRecommendation);
   };
 
   const handleReset = () => {
@@ -160,33 +175,36 @@ const App = () => {
       >
         {!isLoading ? (
           currentRecommendation ? (
-            <MovieCard
-              key={currentRecommendation.id}
-              movie={currentRecommendation}
-            >
-              <div className="flex justify-between px-14 md:justify-center md:space-x-10 mb-auto items-center pb-2 sm:pb-3 md:py-4">
-                <RoundedButton
-                  handleClick={() =>
-                    handleAcceptRecommendation(currentRecommendation)
-                  }
-                  size={buttonSize}
-                  icon={HeartIcon}
-                  rippleColor="green"
-                  isDisabled={isRejecting}
-                  isLoading={isAccepting}
-                />
-                <RoundedButton
-                  handleClick={() =>
-                    handleRejectRecommendation(currentRecommendation)
-                  }
-                  size={buttonSize}
-                  icon={RejectIcon}
-                  rippleColor="red"
-                  isDisabled={isAccepting}
-                  isLoading={isRejecting}
-                />
-              </div>
-            </MovieCard>
+            <>
+              <MovieCard
+                key={currentRecommendation.id}
+                movie={currentRecommendation}
+                onSwipe={handleSwipe}
+              >
+                <div className="flex justify-between px-14 md:justify-center md:space-x-10 mb-auto items-center pb-2 sm:pb-3 md:py-4">
+                  <RoundedButton
+                    handleClick={() =>
+                      handleAcceptRecommendation(currentRecommendation)
+                    }
+                    size={buttonSize}
+                    icon={HeartIcon}
+                    rippleColor="green"
+                    isDisabled={isRejecting}
+                    isLoading={isAccepting}
+                  />
+                  <RoundedButton
+                    handleClick={() =>
+                      handleRejectRecommendation(currentRecommendation)
+                    }
+                    size={buttonSize}
+                    icon={RejectIcon}
+                    rippleColor="red"
+                    isDisabled={isAccepting}
+                    isLoading={isRejecting}
+                  />
+                </div>
+              </MovieCard>
+            </>
           ) : (
             <EmptyState
               header="No Recommendations Available"

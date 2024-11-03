@@ -1,8 +1,16 @@
 {
   "recommendations": [
     {
-      "id": "1and3011",
+      "id": "1and3010",
       "imageURL": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTUzNTE2NTkzMV5BMl5BanBnXkFtZTgwMDAzOTUyMDI@._V1_SY1000_CR0,0,674,1000_AL_.jpg",
+      "title": "Inferno",
+      "summary": "Proin malesuada felis non urna bibendum, nec consequat justo scelerisque. in convallis odio lacinia. Vivamus eleifend interdum malesuada. Curabitur elementum, arcu vel euismod venenatis, odio eros malesuada elit, at laoreet arcu ligula ac justo. Proin vel ullamcorper ligula. In dapibus pharetra libero at congue. Integer aliquam ligula at dolor volutpat, ac scelerisque erat elementum. Suspendisse potenti. Mauris eget arcu vel nulla consequat fringilla.",
+      "rating": 8.3,
+      "isAccepted": null
+    },
+    {
+      "id": "1and3011",
+      "imageURL": "https://cdn.kobo.com/book-images/538b1473-6d45-47f4-b16e-32a0a6ba7f9a/1200/1200/False/star-wars-episode-iv-a-new-hope-3.jpg",
       "title": "Star Wars: A New Hope",
       "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin malesuada felis non urna bibendum, nec consequat justo scelerisque.",
       "rating": 5.3,
@@ -10,7 +18,7 @@
     },
     {
       "id": "1and3012",
-      "imageURL": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTUzNTE2NTkzMV5BMl5BanBnXkFtZTgwMDAzOTUyMDI@._V1_SY1000_CR0,0,674,1000_AL_.jpg",
+      "imageURL": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiK-zzRsXtVX5jJeYbDKnTVSAXfAamdwuHJ8jzqmIyMIx4eJunOBuQBmbIXsDTayWBm-6KcUbvKaB-qWOApbxZB9lTmYZVaVdZ8StQ1jCYvmTp9S2AqgosW9XnnMSW1Jwg9-160kRZy-gJc/s16000/an-unexpected-journey.jpg",
       "title": "The Hobbit: An Unexpected Journey",
       "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed varius nulla vitae nunc blandit, non condimentum lectus dignissim.",
       "rating": 7.7,
@@ -18,7 +26,7 @@
     },
     {
       "id": "1and3013",
-      "imageURL": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTUzNTE2NTkzMV5BMl5BanBnXkFtZTgwMDAzOTUyMDI@._V1_SY1000_CR0,0,674,1000_AL_.jpg",
+      "imageURL": "https://m.media-amazon.com/images/I/912AErFSBHL._AC_UF1000,1000_QL80_.jpg",
       "title": "Inception",
       "summary": "Lorem ipsum dolor sit amet. Quisque eget dui a libero luctus tincidunt. Aliquam erat volutpat. Sed at semper massa.",
       "rating": 4.5,
@@ -26,7 +34,7 @@
     },
     {
       "id": "1and3014",
-      "imageURL": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTUzNTE2NTkzMV5BMl5BanBnXkFtZTgwMDAzOTUyMDI@._V1_SY1000_CR0,0,674,1000_AL_.jpg",
+      "imageURL": "https://m.media-amazon.com/images/I/A1yIAi6tsgL._AC_UF1000,1000_QL80_.jpg",
       "title": "The Matrix",
       "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vulputate quam eu facilisis vehicula. Fusce eget massa purus.",
       "rating": 8.9,
@@ -34,7 +42,7 @@
     },
     {
       "id": "1and3015",
-      "imageURL": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTUzNTE2NTkzMV5BMl5BanBnXkFtZTgwMDAzOTUyMDI@._V1_SY1000_CR0,0,674,1000_AL_.jpg",
+      "imageURL": "https://eplakaty.pl/img/towary/1/2022_03/gpe5633-jpg.jpg",
       "title": "The Lord of the Rings: The Fellowship of the Ring",
       "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tristique arcu ut diam vehicula, et hendrerit sapien ornare.",
       "rating": 7.3,
@@ -42,7 +50,7 @@
     },
     {
       "id": "1and3016",
-      "imageURL": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTUzNTE2NTkzMV5BMl5BanBnXkFtZTgwMDAzOTUyMDI@._V1_SY1000_CR0,0,674,1000_AL_.jpg",
+      "imageURL": "https://m.media-amazon.com/images/I/8142L+TQEyL._AC_UF1000,1000_QL80_.jpg",
       "title": "Jurassic Park",
       "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent scelerisque justo id mi ullamcorper gravida. Cras vehicula efficitur purus.",
       "rating": 2.1,
@@ -50,7 +58,7 @@
     },
     {
       "id": "1and3017",
-      "imageURL": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTUzNTE2NTkzMV5BMl5BanBnXkFtZTgwMDAzOTUyMDI@._V1_SY1000_CR0,0,674,1000_AL_.jpg",
+      "imageURL": "https://i.ebayimg.com/images/g/lpUAAOSwgZJfjIhO/s-l1200.jpg",
       "title": "The Dark Knight",
       "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt felis vel diam dictum, in facilisis dolor luctus.",
       "rating": 4.8,
@@ -58,7 +66,7 @@
     },
     {
       "id": "1and3018",
-      "imageURL": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTUzNTE2NTkzMV5BMl5BanBnXkFtZTgwMDAzOTUyMDI@._V1_SY1000_CR0,0,674,1000_AL_.jpg",
+      "imageURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZe2PSiA8VZ2_ELcPtn3Q8QQquW3qrMxdHUg&s",
       "title": "Avatar",
       "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Integer auctor lacinia purus, a tincidunt libero volutpat non.",
       "rating": 5.6,

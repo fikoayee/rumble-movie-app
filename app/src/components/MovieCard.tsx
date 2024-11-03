@@ -1,18 +1,42 @@
 import { Box, Grid2, Rating } from "@mui/material";
 import React from "react";
 import Recommendation from "../interfaces/recommendation";
-
+import { motion, useMotionValue, useTransform } from "framer-motion";
+import MovieCardSkeleton from "./MovieCardSkeleton";
 interface Props {
   children?: React.ReactNode;
   movie?: Recommendation;
+  onSwipe: (isAccepted: boolean) => void;
 }
 
-const MovieCard = ({ children, movie }: Props) => {
+const MovieCard = ({ children, movie, onSwipe }: Props) => {
+  const x = useMotionValue(0);
+  const opacity = useTransform(x, [-300, 0, 300], [0, 1, 0]);
+
+  const handleDragEnd = () => {
+    let isAccepted = true;
+    const xAxis = x.get();
+    if (Math.abs(xAxis) > 200) {
+      if (xAxis > 0) {
+        isAccepted = false;
+      }
+      onSwipe(isAccepted);
+    }
+  };
+
   return (
     <>
       <Grid2
+        component={motion.div}
+        drag="x"
         size={{ xs: 12, md: 4 }}
         className="h-3/4 overflow-hidden relative shadow-2xl"
+        dragConstraints={{ left: 2, right: 2 }}
+        style={{ x, opacity }}
+        initial={{ opacity: 0.6 }} 
+        animate={{ opacity: 1 }} 
+        transition={{ duration: 0.5 }}
+        onDragEnd={handleDragEnd}
       >
         <img
           src={movie?.imageURL}
@@ -27,6 +51,9 @@ const MovieCard = ({ children, movie }: Props) => {
         </Box>
       </Grid2>
       <Grid2
+        component={motion.div}
+        dragConstraints={{ left: 0, right: 0 }}
+        style={{ x, opacity }}
         size={{ xs: 12, md: 5, lg: 4 }}
         className="h-1/4 md:h-3/4 flex flex-col bg-white rounded-b-2xl md:rounded-b-none md:rounded-r-2xl md:rounded-br-2xl shadow-xl"
       >
