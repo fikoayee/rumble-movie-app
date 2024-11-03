@@ -2,6 +2,7 @@ import { Box, Grid2, Rating } from "@mui/material";
 import React from "react";
 import Recommendation from "../interfaces/recommendation";
 import { motion, useMotionValue, useTransform } from "framer-motion";
+import MoviePlaceholderImg from "../assets/images/movie-placeholder.png"
 interface Props {
   children?: React.ReactNode;
   movie?: Recommendation;
@@ -15,7 +16,7 @@ const MovieCard = ({ children, movie, onSwipe }: Props) => {
   const handleDragEnd = () => {
     let isAccepted = true;
     const xAxis = x.get();
-    if (Math.abs(xAxis) > 200) {
+    if (Math.abs(xAxis) > 100) {
       if (xAxis > 0) { // not quite sure if accept should be from left to right 
         isAccepted = false;
       }
@@ -38,7 +39,8 @@ const MovieCard = ({ children, movie, onSwipe }: Props) => {
         onDragEnd={handleDragEnd}
       >
         <img
-          src={movie?.imageURL}
+          src={movie?.imageURL || MoviePlaceholderImg}
+          alt={movie?.title || "Movie Image"}
           className="w-full h-full object-fill rounded-t-2xl md:rounded-t-none md:rounded-l-2xl md:rounded-tl-2xl"
         />
         <Box sx={{ display: { xs: "block", md: "none" } }}>

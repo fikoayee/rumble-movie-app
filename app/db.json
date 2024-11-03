@@ -6,7 +6,7 @@
       "title": "Inferno",
       "summary": "Proin malesuada felis non urna bibendum, nec consequat justo scelerisque. in convallis odio lacinia. Vivamus eleifend interdum malesuada. Curabitur elementum, arcu vel euismod venenatis, odio eros malesuada elit, at laoreet arcu ligula ac justo. Proin vel ullamcorper ligula. In dapibus pharetra libero at congue. Integer aliquam ligula at dolor volutpat, ac scelerisque erat elementum. Suspendisse potenti. Mauris eget arcu vel nulla consequat fringilla.",
       "rating": 8.3,
-      "isAccepted": true
+      "isAccepted": null
     },
     {
       "id": "1and3011",
@@ -14,7 +14,7 @@
       "title": "Star Wars: A New Hope",
       "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin malesuada felis non urna bibendum, nec consequat justo scelerisque.",
       "rating": 5.3,
-      "isAccepted": false
+      "isAccepted": null
     },
     {
       "id": "1and3012",
@@ -22,7 +22,7 @@
       "title": "The Hobbit: An Unexpected Journey",
       "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed varius nulla vitae nunc blandit, non condimentum lectus dignissim.",
       "rating": 7.7,
-      "isAccepted": true
+      "isAccepted": null
     },
     {
       "id": "1and3013",
@@ -30,7 +30,7 @@
       "title": "Inception",
       "summary": "Lorem ipsum dolor sit amet. Quisque eget dui a libero luctus tincidunt. Aliquam erat volutpat. Sed at semper massa.",
       "rating": 4.5,
-      "isAccepted": true
+      "isAccepted": null
     },
     {
       "id": "1and3014",
@@ -38,15 +38,15 @@
       "title": "The Matrix",
       "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vulputate quam eu facilisis vehicula. Fusce eget massa purus.",
       "rating": 8.9,
-      "isAccepted": false
+      "isAccepted": null
     },
     {
       "id": "1and3015",
-      "imageURL": "https://eplakaty.pl/img/towary/1/2022_03/gpe5633-jpg.jpg",
+      "imageURL": null,
       "title": "The Lord of the Rings: The Fellowship of the Ring",
       "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tristique arcu ut diam vehicula, et hendrerit sapien ornare.",
       "rating": 7.3,
-      "isAccepted": false
+      "isAccepted": null
     },
     {
       "id": "1and3016",
@@ -54,7 +54,7 @@
       "title": "Jurassic Park",
       "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent scelerisque justo id mi ullamcorper gravida. Cras vehicula efficitur purus.",
       "rating": 2.1,
-      "isAccepted": false
+      "isAccepted": null
     },
     {
       "id": "1and3017",
@@ -62,7 +62,7 @@
       "title": "The Dark Knight",
       "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt felis vel diam dictum, in facilisis dolor luctus.",
       "rating": 4.8,
-      "isAccepted": true
+      "isAccepted": null
     },
     {
       "id": "1and3018",
