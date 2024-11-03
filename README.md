@@ -9,11 +9,11 @@
 ```
    npm install
 ```
-3. Start the json api server
+1. Start the api server
 ```
-   npm node server.mjs
+   npm run api
 ```
-4. Start the frontend of the app.
+1. Start the frontend of the app.
 ```
    npm run dev
 ```
