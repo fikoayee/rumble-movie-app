@@ -17,7 +17,7 @@ const MovieCard = ({ children, movie, onSwipe }: Props) => {
     let isAccepted = true;
     const xAxis = x.get();
     if (Math.abs(xAxis) > 200) {
-      if (xAxis > 0) {
+      if (xAxis > 0) { // not quite sure if accept should be from left to right 
         isAccepted = false;
       }
       onSwipe(isAccepted);
@@ -30,17 +30,17 @@ const MovieCard = ({ children, movie, onSwipe }: Props) => {
         component={motion.div}
         drag="x"
         size={{ xs: 12, md: 4 }}
-        className="h-3/4 overflow-hidden relative shadow-2xl"
+        className="h-3/4 overflow-hidden relative shadow-2xl hover:cursor-grab active:cursor-grabbing"
         dragConstraints={{ left: 2, right: 2 }}
         style={{ x, opacity }}
-        initial={{ opacity: 0.6 }} 
-        animate={{ opacity: 1 }} 
+        initial={{ opacity: 0.6 }}
+        animate={{ opacity: 1 }}
         transition={{ duration: 0.5 }}
         onDragEnd={handleDragEnd}
       >
         <img
           src={movie?.imageURL}
-          className="w-full h-full object-fill rounded-t-2xl md:rounded-t-none md:rounded-l-2xl md:rounded-tl-2xl "
+          className="w-full h-full object-fill rounded-t-2xl md:rounded-t-none md:rounded-l-2xl md:rounded-tl-2xl"
         />
         <Box sx={{ display: { xs: "block", md: "none" } }}>
           <div className="absolute text-white top-4 bg-black w-full opacity-80 items-center px-2 py-2">
