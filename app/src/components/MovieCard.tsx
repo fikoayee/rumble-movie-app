@@ -2,7 +2,7 @@ import { Box, Grid2, Rating } from "@mui/material";
 import React from "react";
 import Recommendation from "../interfaces/recommendation";
 import { motion, useMotionValue, useTransform } from "framer-motion";
-import MoviePlaceholderImg from "../assets/images/movie-placeholder.png"
+import MoviePlaceholderImg from "../assets/images/movie-placeholder.png";
 interface Props {
   children?: React.ReactNode;
   movie?: Recommendation;
@@ -17,12 +17,16 @@ const MovieCard = ({ children, movie, onSwipe }: Props) => {
     let isAccepted = true;
     const xAxis = x.get();
     if (Math.abs(xAxis) > 100) {
-      if (xAxis > 0) { // not quite sure if accept should be from left to right 
+      if (xAxis > 0) {
+        // not quite sure if accept should be from left to right
         isAccepted = false;
       }
       onSwipe(isAccepted);
     }
   };
+  function onImageError(e: React.SyntheticEvent<HTMLImageElement>) {
+    e.currentTarget.src = MoviePlaceholderImg;
+  }
 
   return (
     <>
@@ -41,6 +45,7 @@ const MovieCard = ({ children, movie, onSwipe }: Props) => {
         <img
           src={movie?.imageURL || MoviePlaceholderImg}
           alt={movie?.title || "Movie Image"}
+          onError={(e) => onImageError(e)}
           className="w-full h-full object-fill rounded-t-2xl md:rounded-t-none md:rounded-l-2xl md:rounded-tl-2xl"
         />
         <Box sx={{ display: { xs: "block", md: "none" } }}>

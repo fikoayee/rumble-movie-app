@@ -150,7 +150,7 @@ const App = () => {
   };
 
   const currentRecommendation = recommendations.find(
-    (recommendation) => recommendation.isAccepted === null
+    (recommendation) => recommendation.isAccepted == null
   );
 
   // notification
