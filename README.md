@@ -18,7 +18,13 @@
    npm run dev
 ```
 
-### Important Note
+### Running Tests
+You can run the tests for the React components using the following command:
+```
+   npm test
+```
+
+# Important Note
 The deployed application on GitHub Pages is accessible at this [GitHub Page](https://fikoayee.github.io/rumble-movie-app/), but for full functionality, you need to clone the project and run the backend as described above.
 
 
