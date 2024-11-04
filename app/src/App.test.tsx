@@ -1,5 +1,4 @@
 import { fireEvent, render, screen, waitFor } from "@testing-library/react";
-import userEvent from "@testing-library/user-event";
 import RoundedButton from "./components/RoundedButton";
 import HeartIcon from "./assets/icons/heart.svg";
 import "@testing-library/jest-dom";
